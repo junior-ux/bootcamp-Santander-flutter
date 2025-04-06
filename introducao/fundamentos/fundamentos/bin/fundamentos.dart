@@ -1,5 +1,3 @@
-import 'package:fundamentos/fundamentos.dart' as fundamentos;
-
 void main(List<String> arguments) {
   String texto = "Olá";
   var texto2 = "Bootcamp";
