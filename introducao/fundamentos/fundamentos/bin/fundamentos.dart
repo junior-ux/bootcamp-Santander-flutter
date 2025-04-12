@@ -1,7 +1,7 @@
 void main(List<String> arguments) {
   String texto = "Olá";
   var texto2 = "Bootcamp";
-  String texto3;
+  //String texto3;
 
   List<String> lista = [];
   var lista1 = [];
