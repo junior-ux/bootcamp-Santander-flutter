@@ -31,4 +31,10 @@ class Pessoa {
   String toString() {
     return {"Nome": _nome, "Idade": _idade, "CPF": _cpf}.toString();
   }
+
+  Pessoa(String nome, int idade, String cpf) {
+    _nome = nome;
+    _idade = idade;
+    _cpf = cpf;
+  }
 }
