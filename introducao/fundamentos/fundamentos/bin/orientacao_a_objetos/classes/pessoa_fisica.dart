@@ -1,4 +1,5 @@
 import 'pessoa.dart';
+import '../enum/tipo_notificacao.dart';
 
 class PessoaFisica extends Pessoa {
   String _cpf = "";
@@ -13,10 +14,15 @@ class PessoaFisica extends Pessoa {
 
   @override
   String toString() {
-    return {"CPF": _cpf}.toString();
+    return {"CPF": _cpf, "notificação: ": getTipoNotificacao()}.toString();
   }
 
-  PessoaFisica(String nome, int idade, String cpf) : super(nome, idade) {
+  PessoaFisica(
+    String nome,
+    int idade,
+    String cpf,
+    TipoNotificacao tipoNotificacao,
+  ) : super(nome, idade, tipoNotificacao) {
     _cpf = cpf;
   }
 }
