@@ -27,7 +27,9 @@ class PessoaJuridica extends Pessoa {
     String razaoSocial,
     String cnpj,
     TipoNotificacao tipoNotificacao,
-  ) : super(nome, idade, tipoNotificacao) {
+    String telefone,
+    String endereco,
+  ) : super(nome, idade, tipoNotificacao, telefone, endereco) {
     _razaoSocial = razaoSocial;
     _cnpj = cnpj;
   }

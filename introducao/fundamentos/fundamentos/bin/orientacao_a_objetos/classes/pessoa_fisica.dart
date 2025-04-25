@@ -22,7 +22,9 @@ class PessoaFisica extends Pessoa {
     int idade,
     String cpf,
     TipoNotificacao tipoNotificacao,
-  ) : super(nome, idade, tipoNotificacao) {
+    String endereco,
+    String telefone,
+  ) : super(nome, idade, tipoNotificacao, endereco, telefone) {
     _cpf = cpf;
   }
 }
